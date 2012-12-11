@@ -24,6 +24,6 @@ Login : <?php echo $wlogin;?><br>
 Mot de passe : <?php echo $wmdp;?><br>
 Photo : <img src="photos/<?php echo $wphoto;?>"><br>
 <input type="button" value="Retour" onClick="history.back()">&nbsp;
-<input type="button" onClick="location.href='index.php'" value="Menu">
+<input type="button" onClick="location.href='index.html'" value="Menu">
 </body>
 </html>

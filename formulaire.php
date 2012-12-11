@@ -30,7 +30,7 @@ if((@$_POST["submit"]=="Valider")or(@$_GET["mode"]=="S")){
 	$chaine .= @$_POST["mdp"]."#";
 	$chaine .= @$_POST["photo"]."\n";
 	if($num==0){
-		ajouter($chaine);Header("location:index.php");
+		ajouter($chaine);Header("location:index.html");
 	}else{
 		if(@$_GET["mode"]=="S"){
 			supprimer($num);
@@ -61,7 +61,7 @@ Photo : <input readonly type="text" name="photo" value="<?php echo $wphoto;?>">
 <img style="cursor:pointer" src="rep.gif" onClick="choix()" title="Choisir une image"><br>
 <input type="reset" value="Réinitialiser">&nbsp;
 <input type="submit" name="submit" value="Valider">&nbsp;
-<input type="button" onClick="location.href='index.php'" value="Menu">
+<input type="button" onClick="location.href='index.html'" value="Menu">
 </form>
 </body>
 </html>

@@ -25,6 +25,6 @@ if (file_exists($Fnm)) {
 	echo "</table>";
 }
 ?>
-<input type="button" onClick="location.href='index.php'" value="Menu">
+<input type="button" onClick="location.href='index.html'" value="Menu">
 </body>
 </html>

@@ -9,7 +9,7 @@ include("fonctions.php");
 <body><form name="frm" method="post" action="rechercher.php">
 Rechercher : <input type="text" name="quoi">&nbsp;
 <input type="submit" value="Ok">&nbsp;
-<input type="button" onClick="location.href='index.php'" value="Menu">
+<input type="button" onClick="location.href='index.html'" value="Menu">
 </form>
 <?php
 if(@$_POST["quoi"]!=""){
