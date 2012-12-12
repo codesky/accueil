@@ -18,7 +18,7 @@ $(function(){ initDatabase();
 function initDatabase() {
 	try {
 	    if (!window.openDatabase) {
-	        alert('Local Databases are not supported by your browser. Please use a Webkit browser for this demo');
+	        alert('Le navigateur ne prend pas en charge le sqlite.');
 	    } else {
 	        var shortName = 'DEMODB';
 	        var version = '1.0';
@@ -31,9 +31,9 @@ function initDatabase() {
 	} catch(e) {
 	    if (e == 2) {
 	        // Version mismatch.
-	        console.log("Invalid database version.");
+	        console.log("Erreur databas");
 	    } else {
-	        console.log("Unknown error "+ e +".");
+	        console.log("Erreur "+ e +".");
 	    }
 	    return;
 	} 
@@ -61,7 +61,7 @@ function prePopulate(){
 	DEMODB.transaction(
 	    function (transaction) {
 		//Starter data when page is initialized
-		var data = ['1','none','#B3B4EF','Helvetica','Porsche 911 GT3'];  
+		var data = ['1','none','#F00','Helvetica','Liste 1'];  
 		
 		transaction.executeSql("INSERT INTO page_settings(id, fname, bgcolor, font, favcar) VALUES (?, ?, ?, ?, ?)", [data[0], data[1], data[2], data[3], data[4]]);
 	    }
@@ -116,7 +116,7 @@ function dataSelectHandler(transaction, results){
         
         $('body').css('background-color',newFeature.bgcolor);
         $('body').css('font-family',newFeature.font);
-        $('#content').html('<h4 id="your_car">Your Favorite Car is a '+ newFeature.favcar +'</h4>');
+        $('#content').html('<h4 id="your_car">La liste est: '+ newFeature.favcar +'</h4>');
         
         if(newFeature.fname != 'none') {
        		$('#greeting').html('Howdy-ho, '+ newFeature.fname+'!');

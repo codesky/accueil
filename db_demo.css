@@ -59,8 +59,8 @@ h4#your_car {
 }
 
 #wrapper {
-	width: 550px;
-	margin: 50px auto;
+	width: 480px;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -101,33 +101,3 @@ h4#your_car {
 		line-height: 1.5em;
 		text-align: justify;
 	}
-	
-
-/* Bottom Footer*/
-#footer {
-	clear: both;
-	padding: 20px 10px;
-	background: rgba(0,0,0,0.9);
-	height: 90px;
-	color: #fff;
-	text-shadow:2px 1px 1px rgba(223, 223, 223, 0.4);
-	font-size: 0.8em;
-	letter-spacing: 0.02em;
-	min-width:550px;
-	overflow: hidden;
-}		
-	#footer a {
-		color: #EFEFEF;
-		text-decoration: none;
-		border-bottom: 1px dotted rgba(223, 223, 223, 0.2);
-	}
-		#footer a:hover { color: #f26d02 }
-	#footer div {
-		width: 550px;
-		margin: 5px auto;
-		text-align: center;
-	}
-	#footer div p { width: 90% }	
-	
-	#footer div p:last-child { margin-top: 10px }
-	
